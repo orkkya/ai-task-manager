@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background-color: #0f172a;
+  color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 680px;
+}
+
+.card {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 1.5rem;
+  border: 1px solid #334155;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #38bdf8;
+  text-align: center;
+}
+
+p.subtitle {
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.form-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: #38bdf8;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: #0284c7;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  white-space: nowrap;
+}
+
+.btn-primary:hover {
+  background: #0369a1;
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: white;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.85rem;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+}
+
+.btn-edit {
+  background: #f59e0b;
+  color: white;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.85rem;
+  margin-right: 0.4rem;
+}
+
+.btn-edit:hover {
+  background: #d97706;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0f172a;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  border: 1px solid #334155;
+}
+
+.task-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.task-title {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.task-category {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  width: fit-content;
+  background: #334155;
+  color: #38bdf8;
+}
+
+.empty-state {
+  text-align: center;
+  color: #64748b;
+  padding: 2rem 0;
+}
